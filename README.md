@@ -23,6 +23,14 @@ image = camera.get()
 
 ```python
 import r3kit
+from r3kit.devices.encoder.pdcd.angler import Angler
+
+encoder = Angler()
+data = encoder.get()
+```
+
+```python
+import r3kit
 from r3kit.devices.ftsensor.ati.pyati import PyATI
 
 ftsensor = PyATI()
